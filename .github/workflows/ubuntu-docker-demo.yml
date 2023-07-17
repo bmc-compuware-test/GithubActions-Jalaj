@@ -1,0 +1,37 @@
+name: Sync Only
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  ubuntu_version:
+    runs-on: [self-hosted, ispw-ubuntu]
+    steps:
+    - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+    - run: echo "🐧 This job is now running on a ${{ runner.os }} server!"
+    - uses: actions/checkout@v3    
+    - name: Ubuntu Version
+      run: uname -a
+
+  sync:
+    needs: [ubuntu_version]
+    runs-on: [self-hosted, ispw-ubuntu]
+    name: Sync
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: get diff
+        run: git diff-tree --no-commit-id --name-only -r ${{ github.sha }}
+      # sync step 2
+      - name: sync step
+        uses: ./actions/ispwSync # Uses an action in the root directory
+        id: sync
+        with:
+          args: -host cw09 -port 47623 -id pinvxb0 -pass vbug24 -operation syncGitToIspw -ispwServerConfig TPZP -ispwServerStream PLAY -ispwServerApp PLAY -ispwCheckoutLevel DEV1 -gitRepoUrl https://github.com/bmc-compuware-test/GithubPlay.git -gitUsername vbugale -gitPassword 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 -gitBranch main -gitCommit COB/TPROG02.cob -gitFromHash -1 -targetFolder /github/workspace -ispwContainerCreation per-commit
+
+  
