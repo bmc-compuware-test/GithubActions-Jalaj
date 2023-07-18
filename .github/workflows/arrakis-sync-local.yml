@@ -20,7 +20,7 @@ jobs:
     
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
-      Win_Topaz_Location: 'C:\Jalaj\TopazISPW\CLi\TopazWorkBenchCLI20.14Image35\TopazWorkBenchCLI20.14Image35'
+      Win_Topaz_Location: 'C:\Jalaj\TopazISPW\InstalledApplication\Topaz\TopazWorkbenchCLI'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -33,7 +33,7 @@ jobs:
           id: sync-local
           with:
             host: 'cw09.bmc.com'
-            port: 47624
+            port: 47623
             uid: 'pinjxa0'
             pass: ${{ secrets.ISPW_USER1_PWD }}
             runtimeConfiguration: 'TPTP'
