@@ -28,10 +28,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Grab delta from change log
-        run: echo "DELTA_FILES=$( git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | sed -z 's/\n/:/g;s/:$//' ) " >> $GITHUB_ENV
-      - name: Display delta
-        run: echo "DELTA_FILES=$DELTA_FILES"
       - name: Synchronize
         uses: bmc-compuware/ispw-sync@v2
         id: sync-local
