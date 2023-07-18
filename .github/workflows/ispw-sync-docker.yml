@@ -4,9 +4,9 @@ name: ispw sync using docker
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,10 +16,10 @@ jobs:
   # This workflow contains a single job called "build"
   sync:
     # The type of runner that the job will run on
-    runs-on: [self-hosted, ispw-ubuntu]
+    runs-on: [self-hosted]
 
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
       Win_Topaz_Location: 'C:\Topaz\Workbench CLI'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -36,14 +36,14 @@ jobs:
         uses: bmc-compuware/ispw-sync@v2
         id: sync-local
         with:
-          host: "cw09.compuware.com"
+          host: "cw09.bmc.com"
           port: 47623
-          uid: "pinvxb0"
+          uid: "pinjxa0"
           pass: ${{ secrets.ISPW_USER1_PWD }}
           runtimeConfiguration: "TPZP"
           stream: "PLAY"
           application: "PLAY"
           checkoutLevel: "DEV1"
-          gitUid: "vbugale"
-          gitToken: ${{ secrets.GITHUB_TOKEN }}
+          gitUid: "jarora8"
+          gitToken: ${{ secrets.TOKEN_GITHUB }}
           showEnv: true
