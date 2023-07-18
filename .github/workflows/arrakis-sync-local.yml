@@ -6,7 +6,7 @@ name: arrakis sync local
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ arrakis-operations ]
+    branches: [ sync-local-test ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,11 +16,11 @@ jobs:
   # This workflow contains a single job called "build"
   sync:
     # The type of runner that the job will run on
-    runs-on: [self-hosted, ISPW]
+    runs-on: [self-hosted]
     
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      Win_Topaz_Location: 'C:\Topaz\Workbench CLI'
+      GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+      Win_Topaz_Location: 'C:\Jalaj\TopazISPW\CLi\TopazWorkBenchCLI20.14Image35\TopazWorkBenchCLI20.14Image35'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -34,13 +34,13 @@ jobs:
           with:
             host: 'cw09.bmc.com'
             port: 47624
-            uid: 'pinvxb0'
+            uid: 'pinjxa0'
             pass: ${{ secrets.ISPW_USER1_PWD }}
             runtimeConfiguration: 'TPTP'
             stream: 'PLAY'
             application: 'PLAY'
             checkoutLevel: 'PLAY'
-            gitUid: 'vbugale'
-            gitToken: ${{ secrets.GITHUB_TOKEN }}
+            gitUid: 'jarora8'
+            gitToken: ${{ secrets.TOKEN_GITHUB }}
             winTopazPath: ${{ env.Win_Topaz_Location }}
             showEnv: true
