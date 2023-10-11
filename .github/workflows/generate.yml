@@ -15,5 +15,6 @@ jobs:
           runtime_configuration: TPTP
           assignment_id: KATE012501
           level: DEV1
+          task_id: "7E79E2C8ACE2,7E7A4B07B1C1"
       - name: Get the set ID for the generate
         run: echo "The Code Pipeline set used for the generate is ${{ steps.generate.outputs.set_id }}"
