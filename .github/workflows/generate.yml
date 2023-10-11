@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   run-ispw-generate:
-    runs-on: self-hosted
+    runs-on: [self-hosted]
     name: A job to generate source in Code Pipeline
     steps:
       - name: Generate
