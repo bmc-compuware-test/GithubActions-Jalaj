@@ -11,6 +11,4 @@ jobs:
         with:
           ces_url: "http://172.19.173.207:48080/"
           ces_token: "a62dfc2d-da46-4905-871e-303a97bb6f32"
-          srid: TPTP
-      - name: Get the set ID for the generate
-        run: echo "The Code Pipeline set used for the generate is ${{ steps.generate.outputs.set_id }}"
+          srid: CW09
