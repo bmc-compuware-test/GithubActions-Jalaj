@@ -6,13 +6,11 @@ jobs:
     name: A job to get deployment list of Code Pipeline
     steps:
       - name: Deployment List
-        env: 
-          CES_TOKEN: ${{ secrets.CES_TOKEN_KAJAL }}
         uses: bmc-compuware/code-pipeline-deployment-list@master
         id: deploymentlist
         with:
           ces_url: "http://172.19.173.36:48226/"
-          ces_token: env.CES_TOKEN
+          ces_token: "692ded79-f9c0-4e96-9f0a-109759fdc80a"
           srid: "cw09"
           todaysDate: "false"
           priorWeek: "false"
