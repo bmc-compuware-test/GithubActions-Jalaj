@@ -5,8 +5,8 @@ jobs:
     runs-on: [self-hosted]
     name: A job to get deployment list of Code Pipeline
     steps:
-      - name: Deployment List
-        uses: bmc-compuware/code-pipeline-deployment-list@master
+      - name: Code Pipeline Deployment List
+        uses: bmc-compuware/code-pipeline-deployment-list@v1.0.0
         id: deploymentlist
         with:
           ces_url: "http://172.19.173.36:48226/"
