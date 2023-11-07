@@ -33,7 +33,7 @@ jobs:
           winTopazPath: ${{ env.Win_Topaz_Location }}
           #containerCreation: 'per-branch'
           showEnv: true
-          assignmentPrefix: 'DALE'
+          assignmentPrefix: 'KATE'
           ispwConfigPath: 'demo\ispwconfig.yml'
       
       - name: Get automatic build parameters
