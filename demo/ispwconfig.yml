@@ -1,0 +1,27 @@
+!!com.compuware.ispw.wzzms.models.IspwRoot
+ispwApplication:
+  application: KATE
+  encryptionProtocol: None
+  host: cw09.bmc.com
+  hostCodePage: '1047'
+  pathMappings: 
+  - path: \CLST
+    types:
+    - fileExtension: clst
+      ispwType: CLST
+  - path: \COB
+    types:
+    - fileExtension: cob
+      ispwType: COB
+  - path: \COPY
+    types:
+    - fileExtension: copy
+      ispwType: COPY  
+  - path: \JOB
+    types:
+    - fileExtension: job
+      ispwType: JOB  
+  port: 47624
+  readWriteTimeout: 90
+  runtimeConfig: tptp
+  stream: TOPAZ
