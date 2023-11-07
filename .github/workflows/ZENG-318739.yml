@@ -22,7 +22,7 @@ jobs:
           host: 'cw09.bmc.com'
           port: 47624
           uid: 'pinjxa0'
-          pass: ''
+          pass: 'ispw14'
           runtimeConfiguration: 'TPTP'
           stream: 'TOPAZ'
           application: 'KATE'
