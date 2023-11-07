@@ -1,0 +1,41 @@
+name: code-pipeline-sync-local
+
+on: workflow_dispatch
+
+jobs:
+  generate:
+    name: sync, build & deploy
+    runs-on: [self-hosted]
+    env:
+      Win_Topaz_Location: 'C:\Jalaj\TopazISPW\InstalledApplication\TopazWorkBenchCLI20.15.1'
+    
+    steps:
+      - name: checkout step
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - name: sync step
+        uses: bmc-compuware/ispw-sync-local@ZENG-318739
+        id: sync
+        with:
+          host: 'cw09.bmc.com'
+          port: 47624
+          uid: 'pinjxa0'
+          pass: ''
+          runtimeConfiguration: 'TPTP'
+          stream: 'TOPAZ'
+          application: 'KATE'
+          subAppl: 'KATE'
+          checkoutLevel: 'STG1'
+          gitUid: 'jarora8'
+          gitToken: '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'
+          winTopazPath: ${{ env.Win_Topaz_Location }}
+          #containerCreation: 'per-branch'
+          showEnv: true
+          assignmentPrefix: 'DALE'
+          ispwConfigPath: 'demo\ispwconfig.yml'
+      
+      - name: Get automatic build parameters
+        run: echo "automaticBuildJson=${{ steps.sync.outputs.automaticBuildJson }}"
+     
