@@ -5,7 +5,7 @@ on: push
 jobs:
   generate:
     name: sync, build & deploy
-    runs-on: [Rakesh-Github-Runner]
+    runs-on: self-hosted
     env:
       Win_Topaz_Location: 'C:\TopazCLI\23.01.02_134'
     
