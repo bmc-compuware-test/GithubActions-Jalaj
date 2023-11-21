@@ -1,6 +1,6 @@
 name: code-pipeline-sync-local
 
-on: workflow_dispatch
+on: push
 
 jobs:
   generate:
