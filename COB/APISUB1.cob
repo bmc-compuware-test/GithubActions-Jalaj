@@ -6,7 +6,7 @@
 000600
 000700********************************************************
 000800* THIS PROGRAM IS A TRAINING PROGRAM
-000900*      CALLED FROM  Sync Test Jalaj Sync Test 3 Mayank
+000900*      CALLED FROM  Sync Test Jalaj Test 1
 001000*      WITH COPYLIB   APICPYB1 (LINKAGE AREA)
 001100* ======================================================
 001200*  ISPW (TM)
