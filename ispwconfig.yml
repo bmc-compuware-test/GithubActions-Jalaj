@@ -21,7 +21,7 @@ ispwApplication:
     types:
     - fileExtension: job
       ispwType: JOB  
-  port: 47623
+  port: 47624
   readWriteTimeout: 90
   runtimeConfig: tptp
   stream: PLAY
