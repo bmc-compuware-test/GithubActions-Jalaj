@@ -2,7 +2,7 @@
 ispwApplication:
   application: PLAY
   encryptionProtocol: None
-  host: cw09.compuware.com
+  host: cw09.bmc.com
   hostCodePage: '1047'
   pathMappings: 
   - path: \CLST
@@ -23,5 +23,5 @@ ispwApplication:
       ispwType: JOB  
   port: 47623
   readWriteTimeout: 90
-  runtimeConfig: tpzp
+  runtimeConfig: tptp
   stream: PLAY
