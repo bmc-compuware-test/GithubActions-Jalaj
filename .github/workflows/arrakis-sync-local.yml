@@ -27,7 +27,7 @@ jobs:
           id: sync-local
           with:
             host: 'cw09.bmc.com'
-            port: 47623
+            port: 47624
             uid: 'pinjxa0'
             pass: ${{ secrets.ISPW_USER1_PWD }}
             runtimeConfiguration: 'TPZP'
