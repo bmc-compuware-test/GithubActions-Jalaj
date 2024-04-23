@@ -33,7 +33,7 @@ jobs:
             runtimeConfiguration: 'TPZP'
             stream: 'PLAY'
             application: 'PLAY'
-            checkoutLevel: 'PLAY'
+            checkoutLevel: 'DEV1'
             gitUid: 'jarora8'
             gitToken: ${{ secrets.TOKEN_GITHUB }}
             winTopazPath: ${{ env.Win_Topaz_Location }}
