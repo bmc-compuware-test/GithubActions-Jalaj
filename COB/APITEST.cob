@@ -7,7 +7,7 @@
 000600
 000700********************************************************
 000800* THIS PROGRAM IS A TRAINING PROGRAM
-000900*      WITH A LINK TO APISUB
+000900*      WITH A LINK TO APISUB Change3
 001000*
 001100*      AND COPYLIBS   APICPYA   (HEADER)
 001200*                     APICPYB   (LINK AREA)
