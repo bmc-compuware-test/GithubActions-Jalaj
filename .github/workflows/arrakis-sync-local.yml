@@ -14,7 +14,7 @@ jobs:
     
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
-      Win_Topaz_Location: 'C:\Jalaj\TopazISPW\InstalledApplication\Topaz\TopazWorkbenchCLI'
+      Win_Topaz_Location: 'C:\Jalaj\23.4CLI'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -33,6 +33,7 @@ jobs:
             runtimeConfiguration: 'TPTP'
             stream: 'PLAY'
             application: 'PLAY'
+            subAppl: 'PLAY'
             checkoutLevel: 'DEV1'
             gitUid: 'jarora8'
             gitToken: ${{ secrets.TOKEN_GITHUB }}
