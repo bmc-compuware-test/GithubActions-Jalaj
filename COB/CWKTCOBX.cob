@@ -7,7 +7,7 @@
       *  THIS PROGRAM IS A QSAM COBOL DEMO PROGRAM USED FOR            *
       *  TOPAZ FOR TOTAL TEST TRAINING SESSIONS.                       *
       *                                                                *
-      *  INPUT FILE  - EMPLOYEE WAGE INFORMATION                       *
+      *  INPUT FILE  - EMPLOYEE WAGE INFORMATION Change2               *
       *              - STORED IN THE ECC SLCXCNTL FILE - TTTDATH       *
       *  OUTPUT FILE - EMPLOYEE COMPENSATION REPORT                    *
       *              - REGIONAL SALES REPORT                           *
