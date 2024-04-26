@@ -5,7 +5,7 @@
 000500 DATE-COMPILED.
 000600
 000700********************************************************
-000800* THIS PROGRAM IS A TRAINING PROGRAM
+000800* THIS PROGRAM IS A TRAINING PROGRAM TEST2
 000900*      CALLED FROM    KATPRG1
 001000*      WITH COPYLIB   KATCPYB1 (LINKAGE AREA)
 001100* ======================================================
