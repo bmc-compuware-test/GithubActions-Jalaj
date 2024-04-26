@@ -39,4 +39,6 @@ jobs:
             gitUid: 'jarora8'
             gitToken: ${{ secrets.TOKEN_GITHUB }}
             winTopazPath: ${{ env.Win_Topaz_Location }}
+            gitCommit: '9092dd7827e104b35e9e6a03f3a0f6a8fe3181ab'
+            gitFromHash: '67253513feb252444494574dd393feb3e9e7818b'
             showEnv: true
