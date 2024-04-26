@@ -5,7 +5,7 @@
 000500 s s s s s
 000600********************************************************
 000700*  DESCRIPTION: BATCH PROGRAM TO FORCE AN ABEND S0C7 TO
-000800*               TEST ABEND-AID IMS INTERFACE TO FILE-AID
+000800*     Change1  TEST ABEND-AID IMS INTERFACE TO FILE-AID
 000900********************************************************
 001000 ENVIRONMENT DIVISION.
 001100 CONFIGURATION SECTION.
