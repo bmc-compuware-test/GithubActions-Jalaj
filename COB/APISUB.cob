@@ -6,7 +6,7 @@
 000600
 000700********************************************************
 000800* THIS PROGRAM IS A TRAINING PROGRAM
-000900*      CALLED FROM    APITEST Change2
+000900*      CALLED FROM    APITEST Change1.1.1
 001000*      WITH COPYLIB   APICPYB (LINKAGE AREA)
 001100* ======================================================
 001200*  ISPW (TM)
