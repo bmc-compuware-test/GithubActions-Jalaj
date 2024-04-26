@@ -39,10 +39,9 @@ jobs:
             gitUid: 'jarora8'
             gitToken: ${{ secrets.TOKEN_GITHUB }}
             winTopazPath: ${{ env.Win_Topaz_Location }}
-            gitCommit: '9092dd7827e104b35e9e6a03f3a0f6a8fe3181ab'
-            gitFromHash: '67253513feb252444494574dd393feb3e9e7818b'
+            gitCommit: '4965695c8baf4b026f79f5fca03efdc0f47a628b'
+            gitFromHash: '708d3c3e8ee9c237d9469636edb81bc4e2375293'
             showEnv: true
-            gitBranch: 'master'
-            gitCommitFile: 'testcommitfile'
+            gitBranch: 'test'
             gitRepoUrl: 'https://bitbucket.zeng.bmc.com/scm/~jarora/rjk2.git'
             gitLocalPath: 'C:\Jalaj\TopazISPW\Workspaces\20.12\rjk2\'
