@@ -40,7 +40,6 @@ jobs:
             gitToken: ${{ secrets.TOKEN_GITHUB }}
             winTopazPath: ${{ env.Win_Topaz_Location }}
             gitCommit: '3c75f19'
-            gitFromHash: '4a24758'
             showEnv: true
             gitBranch: 'test_sync_gitfromHash'
             gitRepoUrl: 'https://github.com/bmc-compuware-test/GithubActions-Jalaj.git'
