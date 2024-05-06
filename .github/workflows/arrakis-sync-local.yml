@@ -42,6 +42,6 @@ jobs:
             gitCommit: 'cb46176'
             gitFromHash: 'ef01749'
             showEnv: true
-            gitBranch: 'master'
+            gitBranch: 'test_sync_gitfromHash'
             gitRepoUrl: 'https://github.com/bmc-compuware-test/GithubActions-Jalaj.git'
             gitLocalPath: 'C:\actions-runner\_work\GithubActions-Jalaj\GithubActions-Jalaj\'
