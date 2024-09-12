@@ -7,7 +7,7 @@ jobs:
     name: sync, build & deploy
     runs-on: self-hosted
     env:
-      Win_Topaz_Location: 'C:\TopazCLI\23.01.02_134'
+      Win_Topaz_Location: 'C:\Jalaj\23.4CLI'
     
     steps:
       - name: checkout step
@@ -16,25 +16,23 @@ jobs:
           fetch-depth: 0
       
       - name: sync step
-        uses: bmc-compuware/ispw-sync-local@ZENG-318739
+        uses: bmc-compuware/ispw-sync-local@main
         id: sync
         with:
           host: 'cw09.bmc.com'
           port: 47624
-          uid: 'pinrxv0'
-          pass: 'abc1235'
+          uid: 'pinjxa0'
+          pass: 'ispw18'
           runtimeConfiguration: 'TPTP'
           stream: 'TOPAZ'
-          application: 'ISP3'
-          subAppl: 'ISP3'
-          checkoutLevel: 'DEV2'
+          application: 'KATE'
+          subAppl: 'KATE'
+          checkoutLevel: 'DEV1'
           gitUid: 'jarora8'
-          gitToken: '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'
+          gitToken: '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'
           winTopazPath: ${{ env.Win_Topaz_Location }}
           #containerCreation: 'per-branch'
           showEnv: true
-          assignmentPrefix: 'ISP3'
-          ispwConfigPath: 'demo\ispwconfig.yml'
       
       - name: Get automatic build parameters
         run: echo "automaticBuildJson=${{ steps.sync.outputs.automaticBuildJson }}"
