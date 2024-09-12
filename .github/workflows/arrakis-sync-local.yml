@@ -39,8 +39,6 @@ jobs:
             gitUid: 'jarora8'
             gitToken: ${{ secrets.TOKEN_GITHUB }}
             winTopazPath: ${{ env.Win_Topaz_Location }}
-            gitCommit: 'cb46176'
-            gitFromHash: 'ef01749'
             showEnv: true
             gitBranch: 'master'
             gitRepoUrl: 'https://github.com/bmc-compuware-test/GithubActions-Jalaj.git'
