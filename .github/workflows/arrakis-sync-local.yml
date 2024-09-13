@@ -41,5 +41,3 @@ jobs:
             winTopazPath: ${{ env.Win_Topaz_Location }}
             showEnv: true
             gitBranch: 'master'
-            gitRepoUrl: 'https://github.com/bmc-compuware-test/GithubActions-Jalaj.git'
-            gitLocalPath: 'C:\actions-runner\_work\GithubActions-Jalaj\GithubActions-Jalaj\'
