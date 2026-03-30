@@ -9,12 +9,12 @@ jobs:
         uses: bmc-compuware/ispw-generate@v1
         id: generate
         with:
-          ces_url: "http://172.19.173.207:48080/"
-          ces_token: "a62dfc2d-da46-4905-871e-303a97bb6f32"
+          ces_url: "http://localhost:48080/"
+          ces_token: "b9bbe27f-5ced-4b72-a39d-fd215d661626"
           srid: TPTP
           runtime_configuration: TPTP
-          assignment_id: KATE012501
-          level: DEV1
-          task_id: "7E79E2C8ACE2,7E7A4B07B1C1"
+          assignment_id: KATE012560
+          level: DEV2
+          task_id: "7EA2D1C0E80A"
       - name: Get the set ID for the generate
         run: echo "The Code Pipeline set used for the generate is ${{ steps.generate.outputs.set_id }}"
