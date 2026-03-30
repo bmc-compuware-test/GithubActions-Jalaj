@@ -1,1 +1,21 @@
 
+on: workflow_dispatch
+
+jobs:
+  run-ispw-generate:
+    runs-on: [self-hosted]
+    name: A job to generate source in Code Pipeline
+    steps:
+      - name: Generate
+        uses: bmc-compuware/ispw-generate@v1
+        id: generate
+        with:
+          ces_url: "http://localhost:48080/"
+          ces_token: "b9bbe27f-5ced-4b72-a39d-fd215d661626"
+          srid: TPTP
+          runtime_configuration: TPTP
+          assignment_id: KATE012560
+          level: DEV2
+          task_id: "7EA2D1C0E80A"
+      - name: Get the set ID for the generate
+        run: echo "The Code Pipeline set used for the generate is ${{ steps.generate.outputs.set_id }}"
