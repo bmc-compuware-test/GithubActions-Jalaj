@@ -7,7 +7,7 @@ jobs:
     name: A job to generate source in Code Pipeline
     steps:
       - name: Generate
-        uses: bmc-compuware/ispw-generate@v1
+        uses: bmc-compuware/ispw-generate@feature/ZENG-438508-(1/2)-GitHub-Actions-need-to-have-ability-to-act-on-a-Container-for-Generate-action
         id: generate
         with:
           ces_url: "http://localhost:48080/"
@@ -16,6 +16,5 @@ jobs:
           runtime_configuration: TPTP
           assignment_id: KATE012560
           level: DEV2
-          task_id: "7EA2D1C0E80A"
       - name: Get the set ID for the generate
         run: echo "The Code Pipeline set used for the generate is ${{ steps.generate.outputs.set_id }}"
